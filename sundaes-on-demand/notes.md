@@ -47,3 +47,20 @@ command[All]ByQueryType :- Means we can combine these three
             PlaceholderText
             LabelText
             DisplayValue
+
+Mock Service Workers :
+
+    Purpose :
+        Intercept network Calls
+        return specified responses
+    Prevents network calls during tests
+    Setup test conditions using server response
+
+Setup :
+npm install msw
+Create handlers
+Create test server
+Make sure test server listens during all tests
+reset after each test
+
+And here in Mock Service Worker we're not using Browser but Node. Because Jest supports nodejs
