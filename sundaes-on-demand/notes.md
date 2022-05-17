@@ -64,3 +64,6 @@ Make sure test server listens during all tests
 reset after each test
 
 And here in Mock Service Worker we're not using Browser but Node. Because Jest supports nodejs
+
+Await findBy:-
+When you are waiting for something to appear asynchronously on the page, you must use await findBy
