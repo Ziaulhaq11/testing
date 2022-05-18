@@ -67,3 +67,7 @@ And here in Mock Service Worker we're not using Browser but Node. Because Jest s
 
 Await findBy:-
 When you are waiting for something to appear asynchronously on the page, you must use await findBy
+
+select p in terminal to run particular file by typing the name of it
+.only -- to run only that test
+.skip -- to skip particular test
