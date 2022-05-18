@@ -2,6 +2,7 @@ import { render, screen, waitFor } from "@testing-library/react";
 import OrderEntry from "../OrderEntry";
 import { rest } from "msw";
 import { server } from "../../../mocks/server";
+import { OrderDetailsProvider } from "../../../contexts/OrderDetails";
 
 test("handles error for scoops and topping routes", async () => {
   server.resetHandlers(
@@ -12,7 +13,7 @@ test("handles error for scoops and topping routes", async () => {
       return res(ctx.status(500));
     })
   );
-  render(<OrderEntry />);
+  render(<OrderEntry />, { wrapper: OrderDetailsProvider });
 
   // const alerts = await screen.findAllByRole("alert");
   // expect(alerts).toHaveLength(2);Its still works for me but somebody gets error of Having lenght of just 1 not 2. Bc whats happening here is when this is getting one Role alert it is fulfilling the condition. And it returns back not waiting for other role alerts.

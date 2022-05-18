@@ -37,7 +37,7 @@ comes with create-react-app
 
 npm test runs an npm sript that runs Jest in watch mode
 
-How Does JEST work:
+How Does JEST work:-
 Global Tests method has two arguments
 string Description
 test functiiion
@@ -48,15 +48,13 @@ Empty test passes!
 
 Test Driven Development :-
 
-Write Tests before writiing code.
-Then write code according to "spec" set by Tests
-Red Green Testing :
-Tests fail before code is written
+    Write Tests before writiing code.
+    Then write code according to "spec" set by Tests
+    Red Green Testing :
+    Tests fail before code is written
 
 What React Testing Libray Do :
-Creates Virtual DOM for testing
-and uitilities for interaccting with DOM.
-allows testing without a browser
+Creates Virtual DOM for testing and uitilities for interaccting with DOM. allows testing without a browser
 
 Unit Tests :
 Tests one unit of code in isolation
