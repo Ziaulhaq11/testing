@@ -2,10 +2,11 @@ import { Form, Col, Row } from "react-bootstrap";
 
 export default function ScoopOption({ name, imagePath, updateItemCount }) {
   const handleChange = (e) => {
+    console.log(e.target.value);
     updateItemCount(name, e.target.value);
   };
   return (
-    <Col xs={12} sm={6} md={4} style={{ textAlign: "center" }}>
+    <Col xs={12} sm={6} md={3} style={{ textAlign: "center" }}>
       <img
         style={{ width: "75%" }}
         src={`http://localhost:3030/${imagePath}`}

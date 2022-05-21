@@ -1,9 +1,13 @@
-import { findAllByRole, render, screen } from "@testing-library/react";
+import {
+  findAllByRole,
+  render,
+  screen,
+} from "../../../test-utils/testing-library-utils";
 import { OrderDetailsProvider } from "../../../contexts/OrderDetails";
 import Options from "../Options";
 
 test("displays image for each scoop option from server", async () => {
-  render(<Options optionType="scoops" />, { wrapper: OrderDetailsProvider });
+  render(<Options optionType="scoops" />);
 
   //find images
   //   const scoopImages = screen.getAllByRole("img", { name: /scoop$/i });Here it doesn't work bc Images are coming asynchronously .
@@ -17,7 +21,7 @@ test("displays image for each scoop option from server", async () => {
 });
 
 test("displays image for each topping option form server", async () => {
-  render(<Options optionType="toppings" />, { wrapper: OrderDetailsProvider });
+  render(<Options optionType="toppings" />);
   const toppingImages = await screen.findAllByRole("img", /toppings$/i);
   expect(toppingImages).toHaveLength(2);
   const altText = toppingImages.map((element) => element.alt);

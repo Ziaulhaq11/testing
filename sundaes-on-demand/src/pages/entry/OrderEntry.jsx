@@ -1,10 +1,14 @@
+import { useOrderDetails } from "../../contexts/OrderDetails";
 import Options from "./Options";
 
 export default function OrderEntry() {
+  const [OrderDetails] = useOrderDetails();
+
   return (
-    <div>
+    <>
       <Options optionType="scoops" />
       <Options optionType="toppings" />
-    </div>
+      <h2>Grand total is :- {OrderDetails.totals.grandTotal}</h2>
+    </>
   );
 }

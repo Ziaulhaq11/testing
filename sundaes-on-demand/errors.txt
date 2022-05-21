@@ -3,3 +3,12 @@ A worker process has failed to exit gracefully and has been force exited. This i
 Cannot log after tests are done. Did you forget to wait for something async in your test?
 
 Both these are solved by adding {} and return keyword in server.resetHandlers functions while sending ctx response.
+
+
+Getting Error of Unmounted Component and an update to options inside was not wrapped in act(...) :-
+    Here whats happening inside child component we are doing axios call thats causing some issue
+
+    Answers : 
+    Skip auto cleanup (not recommended)
+    Mock Use Effect to bypass Server call (not recommended farther from )
+

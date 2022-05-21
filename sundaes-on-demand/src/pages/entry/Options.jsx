@@ -52,7 +52,7 @@ export default function Options({ optionType }) {
       <h2>{title}</h2>
       <p>${pricePerItem[optionType]}each</p>
       <p>
-        {title} total : {OrderDetails.totals[optionType]}
+        {title} total: {OrderDetails.totals[optionType]}
       </p>
       <Row>{optionItems}</Row>
     </>

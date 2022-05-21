@@ -110,3 +110,5 @@ Create-react-app by defaults comes with ESLint. which we can see in package.json
 
 npm install eslint-plugin-testing-library eslint-plugin-jest-dom
 VS code File Locations
+
+Errors :

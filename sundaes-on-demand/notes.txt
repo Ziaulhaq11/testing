@@ -66,8 +66,20 @@ reset after each test
 And here in Mock Service Worker we're not using Browser but Node. Because Jest supports nodejs
 
 Await findBy:-
-When you are waiting for something to appear asynchronously on the page, you must use await findBy
+    When you are waiting for something to appear asynchronously on the page, you must use await findBy
 
 select p in terminal to run particular file by typing the name of it
-.only -- to run only that test
-.skip -- to skip particular test
+    .only -- to run only that test
+    .skip -- to skip particular test
+
+Review of tests :
+
+getByText to find Total
+    exact option set to false
+number inputs
+    await and findBy (coming from server async)
+    spinbutton role
+    userEvent.clear to clear existing text
+    userEvent.type to enter number
+wrapper option to render to apply context provider
+Redefine Testing Library render to access universally
