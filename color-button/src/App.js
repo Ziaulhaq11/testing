@@ -12,7 +12,6 @@ function App() {
   const [buttonColor,setButtonColor] = useState('MediumVioletRed')
   const newButtonColor = buttonColor === 'MediumVioletRed' ? 'MidnightBlue' : 'MediumVioletRed'
   const [checkbox,setCheckBox] = useState(false)
-  console.log(checkbox)
    return (
     <div className="App">
       <button style={{color : 'white',backgroundColor : checkbox ? 'gray' : buttonColor }} onClick={() => setButtonColor(newButtonColor)} disabled={checkbox}>Change to {replaceCamelWithSpaces(newButtonColor)}</button>
